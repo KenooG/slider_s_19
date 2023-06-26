@@ -35,10 +35,12 @@
 .slider .slider__slide:nth-child(2) {
     background-color: lightgreen;
     left: 100%;
+    background-image: url("../images/slide-2.jpg");
 }
 .slider .slider__slide:last-child {
     background-color: lightgoldenrodyellow;
     left: 200%;
+    background-image: url("../images/slide-3.jpg");
 }
 
 .slider .slider__box{
