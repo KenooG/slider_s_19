@@ -26,17 +26,89 @@
 
 @keyframes slide-1{
     0%{
-        left: 0
+        left: 0;
     }
+    20%{
+
+         left: 0;
+     }
+    40%{
+
+        left: -100%;
+    }
+    60%{
+
+        left: -100%;
+    }
+
+    80%{
+
+        left: -200%;
+    }
+
     100%{
 
-         left: -100%
-     }
-
-
-
-
+        left: -200%;
+    }
 }
+@keyframes slide-2{
+    0%{
+        left: 100%;
+    }
+    20%{
+
+        left: 100%;
+    }
+    40%{
+
+        left: 0;
+    }
+    60%{
+
+        left: 0;
+    }
+
+    80%{
+
+        left: -100%;
+    }
+
+    100%{
+
+        left: -100%;
+    }
+}
+@keyframes slide-3{
+    0%{
+        left: 200%;
+    }
+    20%{
+
+        left: 200%;
+    }
+    40%{
+
+        left: 100%;
+    }
+    60%{
+
+        left: 100%;
+    }
+
+    80%{
+
+        left: 0;
+    }
+
+    100%{
+
+        left: 0;
+    }
+}
+
+
+
+
 
 
 .slider {
@@ -62,7 +134,7 @@
     min-height: var(--sliderHeight);
     background-position: center;
     background-size: cover;
-    animation-duration: 4s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -79,11 +151,14 @@
     background-color: lightgreen;
     left: 100%;
     background-image: url("../images/slide-2.jpg");
+    animation-name: slide-2;
+
 }
 .slider .slider__slide:last-child {
     background-color: lightgoldenrodyellow;
     left: 200%;
     background-image: url("../images/slide-3.jpg");
+    animation-name: slide-3;
 }
 
 .slider .slider__box{
